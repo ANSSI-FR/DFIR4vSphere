@@ -38,7 +38,7 @@ Copy the DFIR4vSphere folder in one of the modules path, for example:
     %ProgramFiles%\WindowsPowerShell\Modules
     %SYSTEMROOT%\system32\WindowsPowerShell\v1.0\Modules
 ```
-The DFIR4vSphere is installed, restart the PowerShell console and load the module:
+The DFIR4vSphere module is installed, restart the PowerShell console and load the module:
 ```
 PS> Import-module DFIR4vSphere
 ```
