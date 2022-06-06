@@ -12,7 +12,7 @@
 
 # Module description: <a name="description"></a>
 
-the DFIR4vSphere PowerShell module collects logs and forensics artefacts on both ESXi hosts and the VCenter console. 
+The DFIR4vSphere PowerShell module collects logs and forensics artefacts on both ESXi hosts and the VCenter console. 
 
 The module has two main functions:
 
@@ -32,19 +32,12 @@ Once installed locate your PowerShell modules path with the following command:
 ```
 PS> $env:PSModulePath
 ```
-Copy the DFIR4vSphere folder in one of the modules path, for example on Windows:
+Copy the DFIR4vSphere folder in one of the modules path, for example:
 ```
     %USERPROFILE%\Documents\WindowsPowerShell\Modules
     %ProgramFiles%\WindowsPowerShell\Modules
     %SYSTEMROOT%\system32\WindowsPowerShell\v1.0\Modules
 ```
-Path examples on Linux:
-```
-    /home/%USERNAME%/.local/share/powershell/Modules
-    /usr/local/share/powershell/Modules
-    /opt/microsoft/powershell/7/Modules
-```
-
 The DFIR4vSphere is installed, restart the PowerShell console and load the module:
 ```
 PS> Import-module DFIR4vSphere
