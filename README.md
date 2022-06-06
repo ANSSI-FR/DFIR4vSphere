@@ -8,7 +8,7 @@
 3. [Start-VC_Investigation data collection](#Start-VC_Investigation)
 4. [Start-ESXi_Investigation data collection](#Start-ESXi_Investigation)
 5. [Files generated](#Files)
-6. [Logs analysis with Splunk](#Logs)
+6. [Log analysis with Splunk](#Logs)
 
 # Module description: <a name="description"></a>
 
@@ -177,7 +177,7 @@ DFIR4vSphere_Collection
 ```
 
 
-# Logs analysis with Splunk: <a name="Logs"></a>
+# Log analysis with Splunk: <a name="Logs"></a>
 
 Once the collection is complete with both functions, you will get logs from:
 
