@@ -23,6 +23,8 @@ DFIR4vSphere was first presented at the [CoRI&IN 2022](https://conf.cecyf.fr/eve
 
 # Installation and pre-requisites: <a name="install"></a>
 
+## Manual Installation.
+
 DFIR4vSphere uses the VMware PowerCLI module, please install it before using the module:
 
 ```
@@ -50,6 +52,16 @@ You should then connect to the vCenter you are investigating **before** launchin
 ```
 PS> Connect-VIServer %VC_Name%
 ```
+
+### Use Docker to run DFIR4vSphere.
+
+Use *docker-compose* to build the image, run the container and mount a volume to retrieve logs:
+
+```
+sudo docker-compose run dfir4vsphere
+```
+
+The module is ready to use.
 
 # Start-VC_Investigation data collection: <a name="Start-VC_Investigation"></a>
 
