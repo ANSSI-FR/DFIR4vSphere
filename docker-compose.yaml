@@ -1,0 +1,8 @@
+version: "3"
+services:
+    dfir4vsphere:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/mnt/host

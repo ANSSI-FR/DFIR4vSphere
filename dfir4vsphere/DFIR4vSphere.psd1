@@ -8,10 +8,10 @@
 RootModule = '.\DFIR4vSphere.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.1.0'
 
 # Supported PSEditions
-CompatiblePSEditions = 'Desktop'
+CompatiblePSEditions = 'Core', 'Desktop'
 
 # ID used to uniquely identify this module
 GUID = '5a74413e-6a91-4668-bc19-58b37cd7cc71'
