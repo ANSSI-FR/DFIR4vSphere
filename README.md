@@ -1,4 +1,7 @@
 ![DFIR4vSphere](./logo.png)
+
+[![Docker Image CI](https://github.com/ANSSI-FR/dfir4vsphere/actions/workflows/docker-image.yml/badge.svg)](https://github.com/ANSSI-FR/dfir4vsphere/actions/workflows/docker-image.yml)
+
 ---
 
 ## Table of contents:
