@@ -215,6 +215,16 @@ Function Start-ESXi_Investigation {
                 if([system.version]$esxhost.version -ge [system.version]"7.0.0")
                 {  
                 try {
+                    $esxcli.software.vib.signature.verify.invoke() | export-csv -NoTypeInformation -Path "$($foldertoprocess)\ESXi_$($esx)_Software_VIBSigCheck.csv"                
+                    }
+                catch
+                    {
+                    $ErrorMessage = $_.Exception.Message
+                    $FailedItem = $_.Exception.ItemName
+                    "Error retrieving VIB signature status on $($esx): Item $($FailedItem) Error message $($ErrorMessage)"  | Write-Log -LogPath $logfile -LogLevel "Warning" 
+                    }
+
+                try {
                     $esxcli.software.baseimage.get.invoke() | export-csv -NoTypeInformation -Path "$($foldertoprocess)\ESXi_$($esx)_Software_Baseimage.csv"                
                     }
                 catch
