@@ -160,6 +160,7 @@ DFIR4vSphere_Collection
 │    │   ESXi_%ESX_Name1%_Software_BaseImage.csv
 │    │   ESXi_%ESX_Name1%_Software_Profile.csv
 │    │   ESXi_%ESX_Name1%_Software_VIB.csv
+│    │   ESXi_%ESX_Name1%_Software_VIBSigCheck.csv
 │    │   ESXi_%ESX_Name1%_Storage_FileSystem.csv
 │    │   ESXi_%ESX_Name1%_Storage_IOFilter.csv
 │    │   ESXi_%ESX_Name1%_System_Accounts.csv
