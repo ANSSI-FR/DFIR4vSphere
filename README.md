@@ -12,6 +12,7 @@
 4. [Start-ESXi_Investigation data collection](#Start-ESXi_Investigation)
 5. [Files generated](#Files)
 6. [Log analysis with Splunk](#Logs)
+7. [When threat actors encrypts the vCenter](#Ransom)
 
 # Module description: <a name="description"></a>
 
@@ -201,3 +202,7 @@ Once the collection is complete with both functions, you will get logs from:
 
 - Start-VC_Investigation: VI Events collected are in JSON format and can be easily indexed in Splunk by using the *CreatedTime* JSON field as timestamp.
 - Start-ESXi_Investigation: ESXi local logs retrieved in the support bundles and located in the */var/run/log* directory can also be indexed by using source types available in the [Splunk addon for ESXi](https://splunkbase.splunk.com/app/5603/).
+
+# When threat actors encrypts the vCenter: <a name="Ransom"></a>
+
+In some ransomware case, the TA kills the VC and it can additionally reset local root ESXi accounts. In that case your only chance is to restore the vCenter from backup, compromised ESXi will then re-attach automatically to the vCenter and then you can launch DFIR4vSphere. To access again the compromised ESXi with local accounts you can perform a password reset through vCenter API calls (here is a script to perform the action https://www.hypervisor.fr/?p=5655)
