@@ -204,7 +204,7 @@ if($LightVIEvents -eq $false)
              $outputfile = "$($foldertoprocess)\VIEvents_" + $outputdate + ".json"
             
              try{
-             $vievents = Get-VIEventPlus -startdate $newstarthour -enddate $newendhour -Entities $Entities -eventMgr $eventMgr | convertto-json -depth 5 -compress
+             $vievents = Get-VIEventPlus -startdate $newstarthour -enddate $newendhour -Entities $Entities -eventMgr $eventMgr | convertto-json -depth 99 -compress
              }
              catch {
                 "Falied to retrieve VIEvents for $($outputdate)" | Write-Log -LogPath $logfile -LogLevel "Warning" 
@@ -226,7 +226,7 @@ if($LightVIEvents -eq $false)
             $outputfile = "$($VIEventsfolder)\VIEvents_" + $VIEventTypeId + ".json"
             try
                 {
-                $vievents = Get-VIEventPlus -startdate $StartDate -enddate $enddate -Entities $Entities -eventMgr $eventMgr -EventTypeId $VIEventTypeId | convertto-json -depth 5 -compress
+                $vievents = Get-VIEventPlus -startdate $StartDate -enddate $enddate -Entities $Entities -eventMgr $eventMgr -EventTypeId $VIEventTypeId | convertto-json -depth 99 -compress
                 }
              catch 
                 {
